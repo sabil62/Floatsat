@@ -1,0 +1,1429 @@
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 6
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"hello_world.cpp"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.rodata._ZL13RODOS_VERSION,"a"
+  16              		.align	3
+  19              	_ZL13RODOS_VERSION:
+  20 0000 00000000 		.word	0
+  21 0004 00406940 		.word	1080639488
+  22              		.section	.rodata._ZL18RODOS_VERSION_TEXT,"a"
+  23              		.align	2
+  26              	_ZL18RODOS_VERSION_TEXT:
+  27 0000 524F444F 		.ascii	"RODOS-202.0\000"
+  27      532D3230 
+  27      322E3000 
+  28              		.section	.rodata._ZN5RODOSL11END_OF_TIMEE,"a"
+  29              		.align	3
+  32              	_ZN5RODOSL11END_OF_TIMEE:
+  33 0000 FFFFFFFF 		.word	-1
+  34 0004 FFFFFF7F 		.word	2147483647
+  35              		.section	.rodata._ZN5RODOSL11NANOSECONDSE,"a"
+  36              		.align	3
+  39              	_ZN5RODOSL11NANOSECONDSE:
+  40 0000 01000000 		.word	1
+  41 0004 00000000 		.word	0
+  42              		.section	.rodata._ZN5RODOSL12MICROSECONDSE,"a"
+  43              		.align	3
+  46              	_ZN5RODOSL12MICROSECONDSE:
+  47 0000 E8030000 		.word	1000
+  48 0004 00000000 		.word	0
+  49              		.section	.rodata._ZN5RODOSL12MILLISECONDSE,"a"
+  50              		.align	3
+  53              	_ZN5RODOSL12MILLISECONDSE:
+  54 0000 40420F00 		.word	1000000
+  55 0004 00000000 		.word	0
+  56              		.section	.rodata._ZN5RODOSL7SECONDSE,"a"
+  57              		.align	3
+  60              	_ZN5RODOSL7SECONDSE:
+  61 0000 00CA9A3B 		.word	1000000000
+  62 0004 00000000 		.word	0
+  63              		.section	.rodata._ZN5RODOSL7MINUTESE,"a"
+  64              		.align	3
+  67              	_ZN5RODOSL7MINUTESE:
+  68 0000 005847F8 		.word	-129542144
+  69 0004 0D000000 		.word	13
+  70              		.section	.rodata._ZN5RODOSL5HOURSE,"a"
+  71              		.align	3
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 2
+
+
+  74              	_ZN5RODOSL5HOURSE:
+  75 0000 00A0B830 		.word	817405952
+  76 0004 46030000 		.word	838
+  77              		.section	.rodata._ZN5RODOSL4DAYSE,"a"
+  78              		.align	3
+  81              	_ZN5RODOSL4DAYSE:
+  82 0000 00004F91 		.word	-1857093632
+  83 0004 944E0000 		.word	20116
+  84              		.section	.rodata._ZN5RODOSL5WEEKSE,"a"
+  85              		.align	3
+  88              	_ZN5RODOSL5WEEKSE:
+  89 0000 000029F9 		.word	-114753536
+  90 0004 0F260200 		.word	140815
+  91              		.section	.rodata._ZN5RODOSL11APID_ANONYME,"a"
+  92              		.align	2
+  95              	_ZN5RODOSL11APID_ANONYME:
+  96 0000 00000000 		.space	4
+  97              		.section	.rodata._ZN5RODOSL15APID_MIDDLEWAREE,"a"
+  98              		.align	2
+ 101              	_ZN5RODOSL15APID_MIDDLEWAREE:
+ 102 0000 0A000000 		.word	10
+ 103              		.section	.rodata._ZN5RODOSL20APID_GATEWAY_GENERICE,"a"
+ 104              		.align	2
+ 107              	_ZN5RODOSL20APID_GATEWAY_GENERICE:
+ 108 0000 14000000 		.word	20
+ 109              		.section	.rodata._ZN5RODOSL16APID_GATEWAY_UDPE,"a"
+ 110              		.align	2
+ 113              	_ZN5RODOSL16APID_GATEWAY_UDPE:
+ 114 0000 15000000 		.word	21
+ 115              		.section	.rodata._ZN5RODOSL17APID_GATEWAY_UARTE,"a"
+ 116              		.align	2
+ 119              	_ZN5RODOSL17APID_GATEWAY_UARTE:
+ 120 0000 16000000 		.word	22
+ 121              		.section	.rodata._ZN5RODOSL15FIRST_USER_APIDE,"a"
+ 122              		.align	2
+ 125              	_ZN5RODOSL15FIRST_USER_APIDE:
+ 126 0000 64000000 		.word	100
+ 127              		.section	.text._ZN5RODOS6Thread4initEv,"axG",%progbits,_ZN5RODOS6Thread4initEv,comdat
+ 128              		.align	1
+ 129              		.weak	_ZN5RODOS6Thread4initEv
+ 130              		.arch armv7e-m
+ 131              		.syntax unified
+ 132              		.thumb
+ 133              		.thumb_func
+ 134              		.fpu softvfp
+ 136              	_ZN5RODOS6Thread4initEv:
+ 137              	.LFB54:
+ 138              		.file 1 "../dependencies/rodos/api/thread.h"
+   1:../dependencies/rodos/api/thread.h **** 
+   2:../dependencies/rodos/api/thread.h **** /**
+   3:../dependencies/rodos/api/thread.h **** * @file thread.h
+   4:../dependencies/rodos/api/thread.h **** * @date 2008/05/04 16:21
+   5:../dependencies/rodos/api/thread.h **** * @author Lutz Dittrich, Sergio Montenegro
+   6:../dependencies/rodos/api/thread.h **** *
+   7:../dependencies/rodos/api/thread.h **** * A Thread is an active schedulable object with own context and stack
+   8:../dependencies/rodos/api/thread.h **** *
+   9:../dependencies/rodos/api/thread.h **** * @brief %A %thread (thread)
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 3
+
+
+  10:../dependencies/rodos/api/thread.h **** */
+  11:../dependencies/rodos/api/thread.h **** 
+  12:../dependencies/rodos/api/thread.h **** #pragma once
+  13:../dependencies/rodos/api/thread.h **** 
+  14:../dependencies/rodos/api/thread.h **** #include <stdint.h>
+  15:../dependencies/rodos/api/thread.h **** 
+  16:../dependencies/rodos/api/thread.h **** #include "listelement.h" // required when compilng with posix
+  17:../dependencies/rodos/api/thread.h **** #include "timemodel.h"
+  18:../dependencies/rodos/api/thread.h **** #include "default-platform-parameter.h"
+  19:../dependencies/rodos/api/thread.h **** 
+  20:../dependencies/rodos/api/thread.h **** #include <stddef.h>
+  21:../dependencies/rodos/api/thread.h **** 
+  22:../dependencies/rodos/api/thread.h **** namespace RODOS {
+  23:../dependencies/rodos/api/thread.h **** 
+  24:../dependencies/rodos/api/thread.h **** extern "C" {
+  25:../dependencies/rodos/api/thread.h ****   void schedulerWrapper(long* ctx);
+  26:../dependencies/rodos/api/thread.h **** }
+  27:../dependencies/rodos/api/thread.h **** 
+  28:../dependencies/rodos/api/thread.h **** long* hwInitContext(long* stack, void* thread);
+  29:../dependencies/rodos/api/thread.h **** 
+  30:../dependencies/rodos/api/thread.h **** /**
+  31:../dependencies/rodos/api/thread.h **** * @class Thread
+  32:../dependencies/rodos/api/thread.h **** * @brief %Thread provides stack and context management
+  33:../dependencies/rodos/api/thread.h **** * To implement a thread, users must inherit from a thread class and implement the run() method.
+  34:../dependencies/rodos/api/thread.h **** * The standard way is to inherit from %StaticThread, which uses a static allocated stack.
+  35:../dependencies/rodos/api/thread.h **** */
+  36:../dependencies/rodos/api/thread.h **** class Thread : public ListElement {
+  37:../dependencies/rodos/api/thread.h ****   friend void schedulerWrapper(long* ctx);
+  38:../dependencies/rodos/api/thread.h ****   friend void threadStartupWrapper(Thread*);
+  39:../dependencies/rodos/api/thread.h ****   friend void initSystem();
+  40:../dependencies/rodos/api/thread.h ****   friend void startIdleThread();
+  41:../dependencies/rodos/api/thread.h ****   friend class Scheduler;
+  42:../dependencies/rodos/api/thread.h ****   friend class ThreadChecker; // not in RODOS, maybe created by users
+  43:../dependencies/rodos/api/thread.h ****   friend class GenericIOInterface;
+  44:../dependencies/rodos/api/thread.h **** 
+  45:../dependencies/rodos/api/thread.h **** private:
+  46:../dependencies/rodos/api/thread.h ****   static List threadList; ///< List of all threads
+  47:../dependencies/rodos/api/thread.h ****   size_t stackSize; 	  ///< size of the thread's stack in bytes
+  48:../dependencies/rodos/api/thread.h ****   long* stack; 		  ///< pointer to the thread's stack (beginning high, growing low)
+  49:../dependencies/rodos/api/thread.h ****   char* stackBegin;	  ///< stack grows down, this is the lower limit
+  50:../dependencies/rodos/api/thread.h ****   long* volatile context; ///< pointer to stored context
+  51:../dependencies/rodos/api/thread.h **** 
+  52:../dependencies/rodos/api/thread.h ****   // Activation control
+  53:../dependencies/rodos/api/thread.h ****   /**  priority of thread, higher values are serverd first  */
+  54:../dependencies/rodos/api/thread.h ****   volatile int32_t priority = 0;
+  55:../dependencies/rodos/api/thread.h **** 
+  56:../dependencies/rodos/api/thread.h ****   /** It will be activated only after this time */
+  57:../dependencies/rodos/api/thread.h ****   volatile int64_t suspendedUntil = 0;
+  58:../dependencies/rodos/api/thread.h **** 
+  59:../dependencies/rodos/api/thread.h ****   /** if waiting for reactivation from someone, eg semaphore */
+  60:../dependencies/rodos/api/thread.h ****   void* waitingFor = nullptr;
+  61:../dependencies/rodos/api/thread.h **** 
+  62:../dependencies/rodos/api/thread.h ****   int64_t nextBeat = END_OF_TIME;  ///<  the next time to awake (used in wait)
+  63:../dependencies/rodos/api/thread.h ****   int64_t period = 0;    ///<  To repeat every period localTime units
+  64:../dependencies/rodos/api/thread.h **** 
+  65:../dependencies/rodos/api/thread.h ****   void create(); ///< called in main() after all constuctors, to create/init thread
+  66:../dependencies/rodos/api/thread.h **** 
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 4
+
+
+  67:../dependencies/rodos/api/thread.h ****   // Used only by the Scheduler and ThreadManager (friends)
+  68:../dependencies/rodos/api/thread.h ****   volatile unsigned long long lastActivation = 0; ///< used by scheduling algorithm
+  69:../dependencies/rodos/api/thread.h ****   void activate(); ///< continue the execution of the thread
+  70:../dependencies/rodos/api/thread.h ****   void initializeStack();
+  71:../dependencies/rodos/api/thread.h **** 
+  72:../dependencies/rodos/api/thread.h ****   static void initializeThreads(); ///< call the init method of all threads
+  73:../dependencies/rodos/api/thread.h ****   static Thread* currentThread; ///< pointer to currently running thread
+  74:../dependencies/rodos/api/thread.h **** 
+  75:../dependencies/rodos/api/thread.h **** public:
+  76:../dependencies/rodos/api/thread.h **** 
+  77:../dependencies/rodos/api/thread.h ****   /**
+  78:../dependencies/rodos/api/thread.h ****    * Initialization of the thread. A user should use a meaningful name for the thread.
+  79:../dependencies/rodos/api/thread.h ****    *
+  80:../dependencies/rodos/api/thread.h ****    * @param name Name of the thread.
+  81:../dependencies/rodos/api/thread.h ****    * @param priority The priority for the thread. Only the thread with the highest value from
+  82:../dependencies/rodos/api/thread.h ****    *        several runnable threads at a time get computing resources.
+  83:../dependencies/rodos/api/thread.h ****    * @param stackSize The size of the stack memory for the thread. Choice a matching value for
+  84:../dependencies/rodos/api/thread.h ****    *        the task of the thread.
+  85:../dependencies/rodos/api/thread.h ****    *
+  86:../dependencies/rodos/api/thread.h ****    * @see DEFAULT_THREAD_PRIORITY
+  87:../dependencies/rodos/api/thread.h ****    * @see DEFAULT_STACKSIZE
+  88:../dependencies/rodos/api/thread.h ****    */
+  89:../dependencies/rodos/api/thread.h ****   [[deprecated("consider using StaticThread!")]]
+  90:../dependencies/rodos/api/thread.h ****   Thread(const char*   name      = "AnonymThread",
+  91:../dependencies/rodos/api/thread.h ****          const int32_t priority  = DEFAULT_THREAD_PRIORITY,
+  92:../dependencies/rodos/api/thread.h ****          const size_t  stackSize = DEFAULT_STACKSIZE);
+  93:../dependencies/rodos/api/thread.h **** 
+  94:../dependencies/rodos/api/thread.h ****   /**
+  95:../dependencies/rodos/api/thread.h ****    * Initialization of the thread. A user should use a meaningful name for the thread.
+  96:../dependencies/rodos/api/thread.h ****    *
+  97:../dependencies/rodos/api/thread.h ****    * @param stack Reference to the allocated space to be used as stack of this thread.
+  98:../dependencies/rodos/api/thread.h ****    *        This has to reference a char array of size STACK_SIZE!
+  99:../dependencies/rodos/api/thread.h ****    * @param name Name of the thread.
+ 100:../dependencies/rodos/api/thread.h ****    * @param priority The priority for the thread. Only the thread with the highest value from
+ 101:../dependencies/rodos/api/thread.h ****    *        several runnable threads at a time get computing resources.
+ 102:../dependencies/rodos/api/thread.h ****    * 
+ 103:../dependencies/rodos/api/thread.h ****    * @tparam STACK_SIZE The size of the stack memory for the thread.
+ 104:../dependencies/rodos/api/thread.h ****    *
+ 105:../dependencies/rodos/api/thread.h ****    * @see DEFAULT_THREAD_PRIORITY
+ 106:../dependencies/rodos/api/thread.h ****    * @see DEFAULT_STACKSIZE
+ 107:../dependencies/rodos/api/thread.h ****    */
+ 108:../dependencies/rodos/api/thread.h ****   template <size_t STACK_SIZE>
+ 109:../dependencies/rodos/api/thread.h ****   Thread(char (&stack)[STACK_SIZE],
+ 110:../dependencies/rodos/api/thread.h ****          const char*   name     = "AnonymThread",
+ 111:../dependencies/rodos/api/thread.h ****          const int32_t priority = DEFAULT_THREAD_PRIORITY)
+ 112:../dependencies/rodos/api/thread.h ****     : ListElement(threadList, name) {
+ 113:../dependencies/rodos/api/thread.h ****       this->stackSize  = STACK_SIZE;
+ 114:../dependencies/rodos/api/thread.h ****       this->stackBegin = stack;
+ 115:../dependencies/rodos/api/thread.h ****       this->stack      = reinterpret_cast<long*>(
+ 116:../dependencies/rodos/api/thread.h ****         (reinterpret_cast<uintptr_t>(stackBegin) + (stackSize - 4)) & (~static_cast<uintptr_t>(7u))
+ 117:../dependencies/rodos/api/thread.h ****       this->priority   = priority;
+ 118:../dependencies/rodos/api/thread.h **** 
+ 119:../dependencies/rodos/api/thread.h ****       initializeStack();
+ 120:../dependencies/rodos/api/thread.h ****   }
+ 121:../dependencies/rodos/api/thread.h **** 
+ 122:../dependencies/rodos/api/thread.h ****   /// Destructor
+ 123:../dependencies/rodos/api/thread.h ****   virtual ~Thread();
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 5
+
+
+ 124:../dependencies/rodos/api/thread.h **** 
+ 125:../dependencies/rodos/api/thread.h ****   /**
+ 126:../dependencies/rodos/api/thread.h ****    * Entry point for user code. The thread activities shall implement by overloading this method.
+ 127:../dependencies/rodos/api/thread.h ****    */
+ 128:../dependencies/rodos/api/thread.h ****   virtual void run() = 0;
+ 129:../dependencies/rodos/api/thread.h **** 
+ 130:../dependencies/rodos/api/thread.h ****   /**
+ 131:../dependencies/rodos/api/thread.h ****    * The method is called after all constructors are executed and before the threads are activated
+ 132:../dependencies/rodos/api/thread.h ****    * by a call to the method run.
+ 133:../dependencies/rodos/api/thread.h ****    *
+ 134:../dependencies/rodos/api/thread.h ****    * It should be overloaded in case the thread has to call other objects for the initialization,
+ 135:../dependencies/rodos/api/thread.h ****    * hence after all instances are present and before any run method is invoked.
+ 136:../dependencies/rodos/api/thread.h ****    *
+ 137:../dependencies/rodos/api/thread.h ****    * @see run
+ 138:../dependencies/rodos/api/thread.h ****    */
+ 139:../dependencies/rodos/api/thread.h ****   virtual void init() {}
+ 139              		.loc 1 139 16
+ 140              		.cfi_startproc
+ 141              		@ args = 0, pretend = 0, frame = 8
+ 142              		@ frame_needed = 1, uses_anonymous_args = 0
+ 143              		@ link register save eliminated.
+ 144 0000 80B4     		push	{r7}
+ 145              	.LCFI0:
+ 146              		.cfi_def_cfa_offset 4
+ 147              		.cfi_offset 7, -4
+ 148 0002 83B0     		sub	sp, sp, #12
+ 149              	.LCFI1:
+ 150              		.cfi_def_cfa_offset 16
+ 151 0004 00AF     		add	r7, sp, #0
+ 152              	.LCFI2:
+ 153              		.cfi_def_cfa_register 7
+ 154 0006 7860     		str	r0, [r7, #4]
+ 155              		.loc 1 139 24
+ 156 0008 00BF     		nop
+ 157 000a 0C37     		adds	r7, r7, #12
+ 158              	.LCFI3:
+ 159              		.cfi_def_cfa_offset 4
+ 160 000c BD46     		mov	sp, r7
+ 161              	.LCFI4:
+ 162              		.cfi_def_cfa_register 13
+ 163              		@ sp needed
+ 164 000e 80BC     		pop	{r7}
+ 165              	.LCFI5:
+ 166              		.cfi_restore 7
+ 167              		.cfi_def_cfa_offset 0
+ 168 0010 7047     		bx	lr
+ 169              		.cfi_endproc
+ 170              	.LFE54:
+ 172              		.section	.rodata._ZN5RODOSL21RODOS_LOCAL_BROADCASTE,"a"
+ 173              		.align	2
+ 176              	_ZN5RODOSL21RODOS_LOCAL_BROADCASTE:
+ 177 0000 00000000 		.space	4
+ 178              		.section	.rodata._ZN5RODOSL25TOPIC_ID_FOR_TOPIC_REPORTE,"a"
+ 179              		.align	2
+ 182              	_ZN5RODOSL25TOPIC_ID_FOR_TOPIC_REPORTE:
+ 183 0000 00000000 		.space	4
+ 184              		.section	.rodata._ZN5RODOSL27TOPIC_ID_SUBSCRIBERS_REPORTE,"a"
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 6
+
+
+ 185              		.align	2
+ 188              	_ZN5RODOSL27TOPIC_ID_SUBSCRIBERS_REPORTE:
+ 189 0000 00000000 		.space	4
+ 190              		.section	.rodata._ZN5RODOSL20TOPIC_ID_DEF_GATEWAYE,"a"
+ 191              		.align	2
+ 194              	_ZN5RODOSL20TOPIC_ID_DEF_GATEWAYE:
+ 195 0000 00000000 		.space	4
+ 196              		.section	.rodata._ZN5RODOSL23TOPIC_ID_NETWORK_REPORTE,"a"
+ 197              		.align	2
+ 200              	_ZN5RODOSL23TOPIC_ID_NETWORK_REPORTE:
+ 201 0000 01000000 		.word	1
+ 202              		.section	.rodata._ZN5RODOSL26TOPIC_ID_TAKS_DISTRIBUTIONE,"a"
+ 203              		.align	2
+ 206              	_ZN5RODOSL26TOPIC_ID_TAKS_DISTRIBUTIONE:
+ 207 0000 02000000 		.word	2
+ 208              		.section	.rodata._ZN5RODOSL23TOPIC_ID_MONITORING_MSGE,"a"
+ 209              		.align	2
+ 212              	_ZN5RODOSL23TOPIC_ID_MONITORING_MSGE:
+ 213 0000 03000000 		.word	3
+ 214              		.section	.rodata._ZN5RODOSL22TOPIC_ID_DEBUG_CMD_MSGE,"a"
+ 215              		.align	2
+ 218              	_ZN5RODOSL22TOPIC_ID_DEBUG_CMD_MSGE:
+ 219 0000 04000000 		.word	4
+ 220              		.section	.rodata._ZN5RODOSL17TOPICID_UART_CONFE,"a"
+ 221              		.align	2
+ 224              	_ZN5RODOSL17TOPICID_UART_CONFE:
+ 225 0000 6E000000 		.word	110
+ 226              		.section	.rodata._ZN5RODOSL15TOPICID_UART_INE,"a"
+ 227              		.align	2
+ 230              	_ZN5RODOSL15TOPICID_UART_INE:
+ 231 0000 6F000000 		.word	111
+ 232              		.section	.rodata._ZN5RODOSL16TOPICID_UART_OUTE,"a"
+ 233              		.align	2
+ 236              	_ZN5RODOSL16TOPICID_UART_OUTE:
+ 237 0000 70000000 		.word	112
+ 238              		.section	.rodata._ZN5RODOSL17TOPIC_ID_PWM_CONFE,"a"
+ 239              		.align	2
+ 242              	_ZN5RODOSL17TOPIC_ID_PWM_CONFE:
+ 243 0000 78000000 		.word	120
+ 244              		.section	.rodata._ZN5RODOSL18TOPIC_ID_PWM_WIDTHE,"a"
+ 245              		.align	2
+ 248              	_ZN5RODOSL18TOPIC_ID_PWM_WIDTHE:
+ 249 0000 79000000 		.word	121
+ 250              		.section	.rodata._ZN5RODOSL20TOPIC_ID_ANALOG_CONFE,"a"
+ 251              		.align	2
+ 254              	_ZN5RODOSL20TOPIC_ID_ANALOG_CONFE:
+ 255 0000 7B000000 		.word	123
+ 256              		.section	.rodata._ZN5RODOSL21TOPIC_ID_ANALOG_CHANSE,"a"
+ 257              		.align	2
+ 260              	_ZN5RODOSL21TOPIC_ID_ANALOG_CHANSE:
+ 261 0000 7C000000 		.word	124
+ 262              		.section	.rodata._ZN5RODOSL19FIRST_USER_TOPIC_IDE,"a"
+ 263              		.align	2
+ 266              	_ZN5RODOSL19FIRST_USER_TOPIC_IDE:
+ 267 0000 E8030000 		.word	1000
+ 268              		.section	.rodata._ZN5RODOSL33MAX_NUMBER_OF_GATEWAYS_PER_ROUTERE,"a"
+ 271              	_ZN5RODOSL33MAX_NUMBER_OF_GATEWAYS_PER_ROUTERE:
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 7
+
+
+ 272 0000 08       		.byte	8
+ 273              		.section	.text._ZN5RODOS12StaticThreadILj2000EED2Ev,"axG",%progbits,_ZN5RODOS12StaticThreadILj2000
+ 274              		.align	1
+ 275              		.weak	_ZN5RODOS12StaticThreadILj2000EED2Ev
+ 276              		.syntax unified
+ 277              		.thumb
+ 278              		.thumb_func
+ 279              		.fpu softvfp
+ 281              	_ZN5RODOS12StaticThreadILj2000EED2Ev:
+ 282              	.LFB213:
+ 140:../dependencies/rodos/api/thread.h **** 
+ 141:../dependencies/rodos/api/thread.h ****   /**
+ 142:../dependencies/rodos/api/thread.h ****    * Get priority of thread.
+ 143:../dependencies/rodos/api/thread.h ****    *
+ 144:../dependencies/rodos/api/thread.h ****    * @return The priority of the thread.
+ 145:../dependencies/rodos/api/thread.h ****    */
+ 146:../dependencies/rodos/api/thread.h ****   int32_t getPriority() const;
+ 147:../dependencies/rodos/api/thread.h **** 
+ 148:../dependencies/rodos/api/thread.h ****   /**
+ 149:../dependencies/rodos/api/thread.h ****    * Set priority of thread
+ 150:../dependencies/rodos/api/thread.h ****    *
+ 151:../dependencies/rodos/api/thread.h ****    * @param[in] prio The new priority of the thread.
+ 152:../dependencies/rodos/api/thread.h ****    */
+ 153:../dependencies/rodos/api/thread.h ****   void setPriority(const int32_t prio);
+ 154:../dependencies/rodos/api/thread.h **** 
+ 155:../dependencies/rodos/api/thread.h ****   static void startAllThreads(); ///< if required (only on gast OSs) called by scheduler
+ 156:../dependencies/rodos/api/thread.h **** 
+ 157:../dependencies/rodos/api/thread.h ****   /**
+ 158:../dependencies/rodos/api/thread.h ****    * Suspend the thread until a given time or a wake up by a call to the method resume.
+ 159:../dependencies/rodos/api/thread.h ****    * By the optional pointer to a signaler the thread could be woken up. A signal is for
+ 160:../dependencies/rodos/api/thread.h ****    * example an object of type inherited from class Event.
+ 161:../dependencies/rodos/api/thread.h ****    *
+ 162:../dependencies/rodos/api/thread.h ****    * @param[in] reactivationTime Optional time to wake up. Default value is end of time.
+ 163:../dependencies/rodos/api/thread.h ****    * @param[in] signaler Pointer to signaler, which can resume the thread.
+ 164:../dependencies/rodos/api/thread.h ****    *
+ 165:../dependencies/rodos/api/thread.h ****    * @return True if the thread is resumed, false if the reactivation time is reached.
+ 166:../dependencies/rodos/api/thread.h ****    *
+ 167:../dependencies/rodos/api/thread.h ****    * @see resume
+ 168:../dependencies/rodos/api/thread.h ****    * @see Event
+ 169:../dependencies/rodos/api/thread.h ****    */
+ 170:../dependencies/rodos/api/thread.h ****   static bool suspendCallerUntil(const int64_t reactivationTime = END_OF_TIME, void* signaler = 0);
+ 171:../dependencies/rodos/api/thread.h **** 
+ 172:../dependencies/rodos/api/thread.h ****   /**
+ 173:../dependencies/rodos/api/thread.h ****    * Suspend a thread until the next computing period of the thread start. The computing periods ar
+ 174:../dependencies/rodos/api/thread.h ****    * computed from a start and a periodical time set with the method setPeriodicBeat. The thread is
+ 175:../dependencies/rodos/api/thread.h ****    * suspend for ever if setPeriodicBeat isn't called before a call to this method.
+ 176:../dependencies/rodos/api/thread.h ****    *
+ 177:../dependencies/rodos/api/thread.h ****    * A call to method resume by another thread or an subscribed event or topic can wake up the thre
+ 178:../dependencies/rodos/api/thread.h ****    * before the next computing period starts. In this cases the reason shall checked by the thread 
+ 179:../dependencies/rodos/api/thread.h ****    * wake up.
+ 180:../dependencies/rodos/api/thread.h ****    *
+ 181:../dependencies/rodos/api/thread.h ****    * @see setPeriodicBeat
+ 182:../dependencies/rodos/api/thread.h ****    * @see resume
+ 183:../dependencies/rodos/api/thread.h ****    * @see Subscriber
+ 184:../dependencies/rodos/api/thread.h ****    */
+ 185:../dependencies/rodos/api/thread.h ****   void suspendUntilNextBeat();
+ 186:../dependencies/rodos/api/thread.h **** 
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 8
+
+
+ 187:../dependencies/rodos/api/thread.h ****   /**
+ 188:../dependencies/rodos/api/thread.h ****    * Defines the start of computing periods for the method suspendUntilNextBeat.
+ 189:../dependencies/rodos/api/thread.h ****    *
+ 190:../dependencies/rodos/api/thread.h ****    * @param begin Time for first the start time of the first computing period.
+ 191:../dependencies/rodos/api/thread.h ****    * @param period Period between the start time of computing periods.
+ 192:../dependencies/rodos/api/thread.h ****    *
+ 193:../dependencies/rodos/api/thread.h ****    * @see suspendUntilNextBeat
+ 194:../dependencies/rodos/api/thread.h ****    */
+ 195:../dependencies/rodos/api/thread.h ****   void setPeriodicBeat(const int64_t begin, const int64_t period);
+ 196:../dependencies/rodos/api/thread.h **** 
+ 197:../dependencies/rodos/api/thread.h ****   /**
+ 198:../dependencies/rodos/api/thread.h ****    * Resume the thread. The thread gets after the call to the method computing resources if no
+ 199:../dependencies/rodos/api/thread.h ****    * other thread with a higher priority occupy the resources. It end calls to the methods
+ 200:../dependencies/rodos/api/thread.h ****    * suspendCallerUntil and suspendUntilNextBeat.
+ 201:../dependencies/rodos/api/thread.h ****    *
+ 202:../dependencies/rodos/api/thread.h ****    * @see suspendCallerUntil
+ 203:../dependencies/rodos/api/thread.h ****    * @see suspendUntilNextBeat
+ 204:../dependencies/rodos/api/thread.h ****    * @see Semaphore
+ 205:../dependencies/rodos/api/thread.h ****    */
+ 206:../dependencies/rodos/api/thread.h ****   void resume();
+ 207:../dependencies/rodos/api/thread.h **** 
+ 208:../dependencies/rodos/api/thread.h ****    /**
+ 209:../dependencies/rodos/api/thread.h ****     * Like resume, but if the resumed thread has a higher priority than the runing one
+ 210:../dependencies/rodos/api/thread.h ****     * then a task switch will take place at once.
+ 211:../dependencies/rodos/api/thread.h ****     *
+ 212:../dependencies/rodos/api/thread.h ****     * WARNING: NEVER call it from an interrupt server
+ 213:../dependencies/rodos/api/thread.h ****     */
+ 214:../dependencies/rodos/api/thread.h **** 
+ 215:../dependencies/rodos/api/thread.h ****     void resumeAndYield() { resume() ; yield(); }
+ 216:../dependencies/rodos/api/thread.h **** 
+ 217:../dependencies/rodos/api/thread.h ****   /**
+ 218:../dependencies/rodos/api/thread.h ****    * Returns the current stack pointer of the thread.
+ 219:../dependencies/rodos/api/thread.h ****    */
+ 220:../dependencies/rodos/api/thread.h ****   uintptr_t getCurrentStackAddr();
+ 221:../dependencies/rodos/api/thread.h **** 
+ 222:../dependencies/rodos/api/thread.h ****   /**
+ 223:../dependencies/rodos/api/thread.h ****    * Cause the currently running thread to pause and perform a reschedule.
+ 224:../dependencies/rodos/api/thread.h ****    */
+ 225:../dependencies/rodos/api/thread.h ****   static void yield();
+ 226:../dependencies/rodos/api/thread.h **** 
+ 227:../dependencies/rodos/api/thread.h ****   /**
+ 228:../dependencies/rodos/api/thread.h ****    * Get a pointer to the currently running thread. The method can used to identify the calling thr
+ 229:../dependencies/rodos/api/thread.h ****    * classes with no inheritance to the class Thread.
+ 230:../dependencies/rodos/api/thread.h ****    *
+ 231:../dependencies/rodos/api/thread.h ****    * @return Pointer to the currently running thread.
+ 232:../dependencies/rodos/api/thread.h ****    */
+ 233:../dependencies/rodos/api/thread.h ****   static Thread* getCurrentThread();
+ 234:../dependencies/rodos/api/thread.h **** 
+ 235:../dependencies/rodos/api/thread.h ****   /**
+ 236:../dependencies/rodos/api/thread.h ****    * Search over all threads and select the one with the highest priority which is ready to run
+ 237:../dependencies/rodos/api/thread.h ****    *
+ 238:../dependencies/rodos/api/thread.h ****    * @return The pointer to the highest priorized runnable thread.
+ 239:../dependencies/rodos/api/thread.h ****    *
+ 240:../dependencies/rodos/api/thread.h ****    * @see resume
+ 241:../dependencies/rodos/api/thread.h ****    */
+ 242:../dependencies/rodos/api/thread.h ****   static Thread* findNextToRun(int64_t timeNow);
+ 243:../dependencies/rodos/api/thread.h **** 
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 9
+
+
+ 244:../dependencies/rodos/api/thread.h ****   /**
+ 245:../dependencies/rodos/api/thread.h ****    * Search over all threads and select the one with the highest priority which is not ready to run
+ 246:../dependencies/rodos/api/thread.h ****    * and waiting for the given signaler.
+ 247:../dependencies/rodos/api/thread.h ****    *
+ 248:../dependencies/rodos/api/thread.h ****    * @param signaler Pointer to the signaler where the thread has to wait on.
+ 249:../dependencies/rodos/api/thread.h ****    *
+ 250:../dependencies/rodos/api/thread.h ****    * @return Pointer to the highest priorized thread waiting on the signaler.
+ 251:../dependencies/rodos/api/thread.h ****    */
+ 252:../dependencies/rodos/api/thread.h ****   static Thread* findNextWaitingFor(void* signaler);
+ 253:../dependencies/rodos/api/thread.h **** 
+ 254:../dependencies/rodos/api/thread.h ****   /**
+ 255:../dependencies/rodos/api/thread.h ****    * Get the schedule counter.
+ 256:../dependencies/rodos/api/thread.h ****    *
+ 257:../dependencies/rodos/api/thread.h ****    * @return The current schedule counter. The counter is increased for each schedule operation.
+ 258:../dependencies/rodos/api/thread.h ****    */
+ 259:../dependencies/rodos/api/thread.h ****   static unsigned long long getScheduleCounter();
+ 260:../dependencies/rodos/api/thread.h **** 
+ 261:../dependencies/rodos/api/thread.h ****   /**
+ 262:../dependencies/rodos/api/thread.h ****    * Sets the priority of the currently running thread. Use it carefully.
+ 263:../dependencies/rodos/api/thread.h ****    *
+ 264:../dependencies/rodos/api/thread.h ****    * @param newPrio Priority to set to the currently running thread.
+ 265:../dependencies/rodos/api/thread.h ****    *
+ 266:../dependencies/rodos/api/thread.h ****    * @return The previous priority of the currently running thread.
+ 267:../dependencies/rodos/api/thread.h ****    *
+ 268:../dependencies/rodos/api/thread.h ****    * @see setPriority
+ 269:../dependencies/rodos/api/thread.h ****    */
+ 270:../dependencies/rodos/api/thread.h ****   static int32_t setPrioCurrentRunner(int32_t newPrio);
+ 271:../dependencies/rodos/api/thread.h **** 
+ 272:../dependencies/rodos/api/thread.h ****   /**
+ 273:../dependencies/rodos/api/thread.h ****    * Get the maximum stack usage of the current thread until now. May return 0 if not supported.
+ 274:../dependencies/rodos/api/thread.h ****    * All mare-metal plattform supoort it.
+ 275:../dependencies/rodos/api/thread.h ****    *
+ 276:../dependencies/rodos/api/thread.h ****    * @return The maximum stack usage of the current thread until now.
+ 277:../dependencies/rodos/api/thread.h ****    */
+ 278:../dependencies/rodos/api/thread.h ****   static size_t getMaxStackUsage();
+ 279:../dependencies/rodos/api/thread.h **** 
+ 280:../dependencies/rodos/api/thread.h **** };
+ 281:../dependencies/rodos/api/thread.h **** 
+ 282:../dependencies/rodos/api/thread.h **** 
+ 283:../dependencies/rodos/api/thread.h **** /**
+ 284:../dependencies/rodos/api/thread.h ****  * This class is the standard way to use threads.
+ 285:../dependencies/rodos/api/thread.h ****  * By inheriting from this class, developers can implement their own threads.
+ 286:../dependencies/rodos/api/thread.h ****  * @tparam STACK_SIZE The size of the stack.
+ 287:../dependencies/rodos/api/thread.h ****  */
+ 288:../dependencies/rodos/api/thread.h **** template <size_t STACK_SIZE = DEFAULT_STACKSIZE>
+ 289:../dependencies/rodos/api/thread.h **** class StaticThread : public Thread {
+ 283              		.loc 1 289 7
+ 284              		.cfi_startproc
+ 285              		@ args = 0, pretend = 0, frame = 8
+ 286              		@ frame_needed = 1, uses_anonymous_args = 0
+ 287 0000 80B5     		push	{r7, lr}
+ 288              	.LCFI6:
+ 289              		.cfi_def_cfa_offset 8
+ 290              		.cfi_offset 7, -8
+ 291              		.cfi_offset 14, -4
+ 292 0002 82B0     		sub	sp, sp, #8
+ 293              	.LCFI7:
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 10
+
+
+ 294              		.cfi_def_cfa_offset 16
+ 295 0004 00AF     		add	r7, sp, #0
+ 296              	.LCFI8:
+ 297              		.cfi_def_cfa_register 7
+ 298 0006 7860     		str	r0, [r7, #4]
+ 299              	.LBB2:
+ 300              		.loc 1 289 7
+ 301 0008 054A     		ldr	r2, .L4
+ 302 000a 7B68     		ldr	r3, [r7, #4]
+ 303 000c 1A60     		str	r2, [r3]
+ 304 000e 7B68     		ldr	r3, [r7, #4]
+ 305 0010 1846     		mov	r0, r3
+ 306 0012 FFF7FEFF 		bl	_ZN5RODOS6ThreadD2Ev
+ 307              	.LBE2:
+ 308 0016 7B68     		ldr	r3, [r7, #4]
+ 309 0018 1846     		mov	r0, r3
+ 310 001a 0837     		adds	r7, r7, #8
+ 311              	.LCFI9:
+ 312              		.cfi_def_cfa_offset 8
+ 313 001c BD46     		mov	sp, r7
+ 314              	.LCFI10:
+ 315              		.cfi_def_cfa_register 13
+ 316              		@ sp needed
+ 317 001e 80BD     		pop	{r7, pc}
+ 318              	.L5:
+ 319              		.align	2
+ 320              	.L4:
+ 321 0020 08000000 		.word	_ZTVN5RODOS12StaticThreadILj2000EEE+8
+ 322              		.cfi_endproc
+ 323              	.LFE213:
+ 325              		.weak	_ZN5RODOS12StaticThreadILj2000EED1Ev
+ 326              		.thumb_set _ZN5RODOS12StaticThreadILj2000EED1Ev,_ZN5RODOS12StaticThreadILj2000EED2Ev
+ 327              		.section	.text._ZN5RODOS12StaticThreadILj2000EED0Ev,"axG",%progbits,_ZN5RODOS12StaticThreadILj2000
+ 328              		.align	1
+ 329              		.weak	_ZN5RODOS12StaticThreadILj2000EED0Ev
+ 330              		.syntax unified
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.fpu softvfp
+ 335              	_ZN5RODOS12StaticThreadILj2000EED0Ev:
+ 336              	.LFB215:
+ 337              		.loc 1 289 7
+ 338              		.cfi_startproc
+ 339              		@ args = 0, pretend = 0, frame = 8
+ 340              		@ frame_needed = 1, uses_anonymous_args = 0
+ 341 0000 80B5     		push	{r7, lr}
+ 342              	.LCFI11:
+ 343              		.cfi_def_cfa_offset 8
+ 344              		.cfi_offset 7, -8
+ 345              		.cfi_offset 14, -4
+ 346 0002 82B0     		sub	sp, sp, #8
+ 347              	.LCFI12:
+ 348              		.cfi_def_cfa_offset 16
+ 349 0004 00AF     		add	r7, sp, #0
+ 350              	.LCFI13:
+ 351              		.cfi_def_cfa_register 7
+ 352 0006 7860     		str	r0, [r7, #4]
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 11
+
+
+ 353              		.loc 1 289 7
+ 354 0008 7868     		ldr	r0, [r7, #4]
+ 355 000a FFF7FEFF 		bl	_ZN5RODOS12StaticThreadILj2000EED1Ev
+ 356 000e 7868     		ldr	r0, [r7, #4]
+ 357 0010 FFF7FEFF 		bl	_ZdlPv
+ 358 0014 7B68     		ldr	r3, [r7, #4]
+ 359 0016 1846     		mov	r0, r3
+ 360 0018 0837     		adds	r7, r7, #8
+ 361              	.LCFI14:
+ 362              		.cfi_def_cfa_offset 8
+ 363 001a BD46     		mov	sp, r7
+ 364              	.LCFI15:
+ 365              		.cfi_def_cfa_register 13
+ 366              		@ sp needed
+ 367 001c 80BD     		pop	{r7, pc}
+ 368              		.cfi_endproc
+ 369              	.LFE215:
+ 371              		.section	.rodata._ZN5RODOSL13UART_BUF_SIZEE,"a"
+ 372              		.align	2
+ 375              	_ZN5RODOSL13UART_BUF_SIZEE:
+ 376 0000 00010000 		.word	256
+ 377              		.section	.rodata._ZN5RODOSL23MAX_UART_MESSAGE_LENGTHE,"a"
+ 378              		.align	2
+ 381              	_ZN5RODOSL23MAX_UART_MESSAGE_LENGTHE:
+ 382 0000 1A050000 		.word	1306
+ 383              		.section	.rodata._ZN5RODOSL15OUTPUT_BUF_SIZEE,"a"
+ 384              		.align	2
+ 387              	_ZN5RODOSL15OUTPUT_BUF_SIZEE:
+ 388 0000 40000000 		.word	64
+ 389              		.section	.rodata._ZL16IP_BROADCAST_ADR,"a"
+ 390              		.align	2
+ 393              	_ZL16IP_BROADCAST_ADR:
+ 394 0000 3132372E 		.ascii	"127.255.255.255\000"
+ 394      3235352E 
+ 394      3235352E 
+ 394      32353500 
+ 395              		.section	.rodata._ZN5RODOSL18CAN_LINK_NODE_BITSE,"a"
+ 398              	_ZN5RODOSL18CAN_LINK_NODE_BITSE:
+ 399 0000 08       		.byte	8
+ 400              		.section	.rodata._ZN5RODOSL19CAN_LINK_TOPIC_BITSE,"a"
+ 403              	_ZN5RODOSL19CAN_LINK_TOPIC_BITSE:
+ 404 0000 10       		.byte	16
+ 405              		.section	.rodata._ZN5RODOSL11CAN_LINK_IDE,"a"
+ 406              		.align	2
+ 409              	_ZN5RODOSL11CAN_LINK_IDE:
+ 410 0000 0000001C 		.word	469762048
+ 411              		.section	.rodata._ZN5RODOSL19CAN_MSG_BUFFER_SIZEE,"a"
+ 412              		.align	2
+ 415              	_ZN5RODOSL19CAN_MSG_BUFFER_SIZEE:
+ 416 0000 80000000 		.word	128
+ 417              		.section	.rodata._ZN5RODOSL14CAN_TX_TIMEOUTE,"a"
+ 418              		.align	3
+ 421              	_ZN5RODOSL14CAN_TX_TIMEOUTE:
+ 422 0000 80F0FA02 		.word	50000000
+ 423 0004 00000000 		.word	0
+ 424              		.section	.rodata._ZN5RODOSL8FIFOSIZEE,"a"
+ 425              		.align	2
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 12
+
+
+ 428              	_ZN5RODOSL8FIFOSIZEE:
+ 429 0000 0A000000 		.word	10
+ 430              		.section	.rodata._ZN5RODOSL10MAXMEMBERSE,"a"
+ 431              		.align	2
+ 434              	_ZN5RODOSL10MAXMEMBERSE:
+ 435 0000 32000000 		.word	50
+ 436              		.section	.rodata
+ 437              		.align	2
+ 438              	.LC0:
+ 439 0000 48656C6C 		.ascii	"Hello World!\012\000"
+ 439      6F20576F 
+ 439      726C6421 
+ 439      0A00
+ 440              		.section	.text._ZN10HelloWorld3runEv,"axG",%progbits,_ZN10HelloWorld3runEv,comdat
+ 441              		.align	1
+ 442              		.weak	_ZN10HelloWorld3runEv
+ 443              		.syntax unified
+ 444              		.thumb
+ 445              		.thumb_func
+ 446              		.fpu softvfp
+ 448              	_ZN10HelloWorld3runEv:
+ 449              	.LFB263:
+ 450              		.file 2 "hello_world.cpp"
+   1:hello_world.cpp **** // The class Thread is extended by a custom run() procedure, which 
+   2:hello_world.cpp **** // writes Hello World to the UART with PRINTF.
+   3:hello_world.cpp **** 
+   4:hello_world.cpp **** #include "rodos.h"
+   5:hello_world.cpp **** 
+   6:hello_world.cpp **** class HelloWorld : public StaticThread<>
+   7:hello_world.cpp **** {
+   8:hello_world.cpp **** 	void run()
+ 451              		.loc 2 8 7
+ 452              		.cfi_startproc
+ 453              		@ args = 0, pretend = 0, frame = 8
+ 454              		@ frame_needed = 1, uses_anonymous_args = 0
+ 455 0000 80B5     		push	{r7, lr}
+ 456              	.LCFI16:
+ 457              		.cfi_def_cfa_offset 8
+ 458              		.cfi_offset 7, -8
+ 459              		.cfi_offset 14, -4
+ 460 0002 82B0     		sub	sp, sp, #8
+ 461              	.LCFI17:
+ 462              		.cfi_def_cfa_offset 16
+ 463 0004 00AF     		add	r7, sp, #0
+ 464              	.LCFI18:
+ 465              		.cfi_def_cfa_register 7
+ 466 0006 7860     		str	r0, [r7, #4]
+   9:hello_world.cpp **** 	{
+  10:hello_world.cpp **** 		PRINTF("Hello World!\n");
+ 467              		.loc 2 10 9
+ 468 0008 0348     		ldr	r0, .L9
+ 469 000a FFF7FEFF 		bl	_ZN5RODOS6PRINTFEPKcz
+  11:hello_world.cpp **** 	}
+ 470              		.loc 2 11 2
+ 471 000e 00BF     		nop
+ 472 0010 0837     		adds	r7, r7, #8
+ 473              	.LCFI19:
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 13
+
+
+ 474              		.cfi_def_cfa_offset 8
+ 475 0012 BD46     		mov	sp, r7
+ 476              	.LCFI20:
+ 477              		.cfi_def_cfa_register 13
+ 478              		@ sp needed
+ 479 0014 80BD     		pop	{r7, pc}
+ 480              	.L10:
+ 481 0016 00BF     		.align	2
+ 482              	.L9:
+ 483 0018 00000000 		.word	.LC0
+ 484              		.cfi_endproc
+ 485              	.LFE263:
+ 487              		.section	.rodata
+ 488 000e 0000     		.align	2
+ 489              	.LC1:
+ 490 0010 416E6F6E 		.ascii	"AnonymThread\000"
+ 490      796D5468 
+ 490      72656164 
+ 490      00
+ 491              		.section	.text._ZN10HelloWorldC2Ev,"axG",%progbits,_ZN10HelloWorldC5Ev,comdat
+ 492              		.align	1
+ 493              		.weak	_ZN10HelloWorldC2Ev
+ 494              		.syntax unified
+ 495              		.thumb
+ 496              		.thumb_func
+ 497              		.fpu softvfp
+ 499              	_ZN10HelloWorldC2Ev:
+ 500              	.LFB265:
+   6:hello_world.cpp **** {
+ 501              		.loc 2 6 7
+ 502              		.cfi_startproc
+ 503              		@ args = 0, pretend = 0, frame = 8
+ 504              		@ frame_needed = 1, uses_anonymous_args = 0
+ 505 0000 80B5     		push	{r7, lr}
+ 506              	.LCFI21:
+ 507              		.cfi_def_cfa_offset 8
+ 508              		.cfi_offset 7, -8
+ 509              		.cfi_offset 14, -4
+ 510 0002 82B0     		sub	sp, sp, #8
+ 511              	.LCFI22:
+ 512              		.cfi_def_cfa_offset 16
+ 513 0004 00AF     		add	r7, sp, #0
+ 514              	.LCFI23:
+ 515              		.cfi_def_cfa_register 7
+ 516 0006 7860     		str	r0, [r7, #4]
+ 517              	.LBB3:
+   6:hello_world.cpp **** {
+ 518              		.loc 2 6 7
+ 519 0008 7B68     		ldr	r3, [r7, #4]
+ 520 000a 6422     		movs	r2, #100
+ 521 000c 0549     		ldr	r1, .L13
+ 522 000e 1846     		mov	r0, r3
+ 523 0010 FFF7FEFF 		bl	_ZN5RODOS12StaticThreadILj2000EEC2EPKcl
+ 524 0014 044A     		ldr	r2, .L13+4
+ 525 0016 7B68     		ldr	r3, [r7, #4]
+ 526 0018 1A60     		str	r2, [r3]
+ 527              	.LBE3:
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 14
+
+
+ 528 001a 7B68     		ldr	r3, [r7, #4]
+ 529 001c 1846     		mov	r0, r3
+ 530 001e 0837     		adds	r7, r7, #8
+ 531              	.LCFI24:
+ 532              		.cfi_def_cfa_offset 8
+ 533 0020 BD46     		mov	sp, r7
+ 534              	.LCFI25:
+ 535              		.cfi_def_cfa_register 13
+ 536              		@ sp needed
+ 537 0022 80BD     		pop	{r7, pc}
+ 538              	.L14:
+ 539              		.align	2
+ 540              	.L13:
+ 541 0024 10000000 		.word	.LC1
+ 542 0028 08000000 		.word	_ZTV10HelloWorld+8
+ 543              		.cfi_endproc
+ 544              	.LFE265:
+ 546              		.weak	_ZN10HelloWorldC1Ev
+ 547              		.thumb_set _ZN10HelloWorldC1Ev,_ZN10HelloWorldC2Ev
+ 548              		.global	hello_world
+ 549              		.section	.bss.hello_world,"aw",%nobits
+ 550              		.align	3
+ 553              	hello_world:
+ 554 0000 00000000 		.space	2080
+ 554      00000000 
+ 554      00000000 
+ 554      00000000 
+ 554      00000000 
+ 555              		.section	.text._ZN5RODOS12StaticThreadILj2000EEC2EPKcl,"axG",%progbits,_ZN5RODOS12StaticThreadILj2
+ 556              		.align	1
+ 557              		.weak	_ZN5RODOS12StaticThreadILj2000EEC2EPKcl
+ 558              		.syntax unified
+ 559              		.thumb
+ 560              		.thumb_func
+ 561              		.fpu softvfp
+ 563              	_ZN5RODOS12StaticThreadILj2000EEC2EPKcl:
+ 564              	.LFB272:
+ 290:../dependencies/rodos/api/thread.h ****     char stack alignas(8)[STACK_SIZE];  ///< The stack as a member byte array.
+ 291:../dependencies/rodos/api/thread.h **** public:
+ 292:../dependencies/rodos/api/thread.h ****     /**
+ 293:../dependencies/rodos/api/thread.h ****     * Constructor initializing the %Thread.
+ 294:../dependencies/rodos/api/thread.h ****     * @param name The name of the thread.
+ 295:../dependencies/rodos/api/thread.h ****     * @param priority The priority of the thread.
+ 296:../dependencies/rodos/api/thread.h ****     */
+ 297:../dependencies/rodos/api/thread.h ****     StaticThread(const char* name = "AnonymThread", const int32_t priority = DEFAULT_THREAD_PRIORIT
+ 565              		.loc 1 297 5
+ 566              		.cfi_startproc
+ 567              		@ args = 0, pretend = 0, frame = 16
+ 568              		@ frame_needed = 1, uses_anonymous_args = 0
+ 569 0000 80B5     		push	{r7, lr}
+ 570              	.LCFI26:
+ 571              		.cfi_def_cfa_offset 8
+ 572              		.cfi_offset 7, -8
+ 573              		.cfi_offset 14, -4
+ 574 0002 84B0     		sub	sp, sp, #16
+ 575              	.LCFI27:
+ 576              		.cfi_def_cfa_offset 24
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 15
+
+
+ 577 0004 00AF     		add	r7, sp, #0
+ 578              	.LCFI28:
+ 579              		.cfi_def_cfa_register 7
+ 580 0006 F860     		str	r0, [r7, #12]
+ 581 0008 B960     		str	r1, [r7, #8]
+ 582 000a 7A60     		str	r2, [r7, #4]
+ 583              	.LBB4:
+ 298:../dependencies/rodos/api/thread.h ****       : Thread(stack, name, priority) {}
+ 584              		.loc 1 298 37
+ 585 000c F868     		ldr	r0, [r7, #12]
+ 586              		.loc 1 298 16
+ 587 000e FB68     		ldr	r3, [r7, #12]
+ 588 0010 03F15001 		add	r1, r3, #80
+ 589              		.loc 1 298 37
+ 590 0014 7B68     		ldr	r3, [r7, #4]
+ 591 0016 BA68     		ldr	r2, [r7, #8]
+ 592 0018 FFF7FEFF 		bl	_ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl
+ 593 001c 034A     		ldr	r2, .L17
+ 594 001e FB68     		ldr	r3, [r7, #12]
+ 595 0020 1A60     		str	r2, [r3]
+ 596              	.LBE4:
+ 597              		.loc 1 298 40
+ 598 0022 FB68     		ldr	r3, [r7, #12]
+ 599 0024 1846     		mov	r0, r3
+ 600 0026 1037     		adds	r7, r7, #16
+ 601              	.LCFI29:
+ 602              		.cfi_def_cfa_offset 8
+ 603 0028 BD46     		mov	sp, r7
+ 604              	.LCFI30:
+ 605              		.cfi_def_cfa_register 13
+ 606              		@ sp needed
+ 607 002a 80BD     		pop	{r7, pc}
+ 608              	.L18:
+ 609              		.align	2
+ 610              	.L17:
+ 611 002c 08000000 		.word	_ZTVN5RODOS12StaticThreadILj2000EEE+8
+ 612              		.cfi_endproc
+ 613              	.LFE272:
+ 615              		.weak	_ZN5RODOS12StaticThreadILj2000EEC1EPKcl
+ 616              		.thumb_set _ZN5RODOS12StaticThreadILj2000EEC1EPKcl,_ZN5RODOS12StaticThreadILj2000EEC2EPKcl
+ 617              		.section	.text._ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl,"axG",%progbits,_ZN5RODOS6ThreadC5ILj2000EEE
+ 618              		.align	1
+ 619              		.weak	_ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl
+ 620              		.syntax unified
+ 621              		.thumb
+ 622              		.thumb_func
+ 623              		.fpu softvfp
+ 625              	_ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl:
+ 626              	.LFB275:
+ 109:../dependencies/rodos/api/thread.h ****          const char*   name     = "AnonymThread",
+ 627              		.loc 1 109 3
+ 628              		.cfi_startproc
+ 629              		@ args = 0, pretend = 0, frame = 16
+ 630              		@ frame_needed = 1, uses_anonymous_args = 0
+ 631 0000 90B5     		push	{r4, r7, lr}
+ 632              	.LCFI31:
+ 633              		.cfi_def_cfa_offset 12
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 16
+
+
+ 634              		.cfi_offset 4, -12
+ 635              		.cfi_offset 7, -8
+ 636              		.cfi_offset 14, -4
+ 637 0002 85B0     		sub	sp, sp, #20
+ 638              	.LCFI32:
+ 639              		.cfi_def_cfa_offset 32
+ 640 0004 00AF     		add	r7, sp, #0
+ 641              	.LCFI33:
+ 642              		.cfi_def_cfa_register 7
+ 643 0006 F860     		str	r0, [r7, #12]
+ 644 0008 B960     		str	r1, [r7, #8]
+ 645 000a 7A60     		str	r2, [r7, #4]
+ 646 000c 3B60     		str	r3, [r7]
+ 647              	.LBB5:
+ 112:../dependencies/rodos/api/thread.h ****       this->stackSize  = STACK_SIZE;
+ 648              		.loc 1 112 35
+ 649 000e F868     		ldr	r0, [r7, #12]
+ 650 0010 0023     		movs	r3, #0
+ 651 0012 7A68     		ldr	r2, [r7, #4]
+ 652 0014 2249     		ldr	r1, .L21
+ 653 0016 FFF7FEFF 		bl	_ZN5RODOS11ListElementC2ERPS0_PKcPv
+ 654 001a 224A     		ldr	r2, .L21+4
+ 655 001c FB68     		ldr	r3, [r7, #12]
+ 656 001e 1A60     		str	r2, [r3]
+ 657 0020 FB68     		ldr	r3, [r7, #12]
+ 658 0022 0022     		movs	r2, #0
+ 659 0024 5A62     		str	r2, [r3, #36]
+ 660 0026 FA68     		ldr	r2, [r7, #12]
+ 661 0028 4FF00003 		mov	r3, #0
+ 662 002c 4FF00004 		mov	r4, #0
+ 663 0030 C2E90A34 		strd	r3, [r2, #40]
+ 664 0034 FB68     		ldr	r3, [r7, #12]
+ 665 0036 0022     		movs	r2, #0
+ 666 0038 1A63     		str	r2, [r3, #48]
+ 667 003a FA68     		ldr	r2, [r7, #12]
+ 668 003c 4FF0FF33 		mov	r3, #-1
+ 669 0040 6FF00044 		mvn	r4, #-2147483648
+ 670 0044 C2E90E34 		strd	r3, [r2, #56]
+ 671 0048 FA68     		ldr	r2, [r7, #12]
+ 672 004a 4FF00003 		mov	r3, #0
+ 673 004e 4FF00004 		mov	r4, #0
+ 674 0052 C2E91034 		strd	r3, [r2, #64]
+ 675 0056 FA68     		ldr	r2, [r7, #12]
+ 676 0058 4FF00003 		mov	r3, #0
+ 677 005c 4FF00004 		mov	r4, #0
+ 678 0060 C2E91234 		strd	r3, [r2, #72]
+ 113:../dependencies/rodos/api/thread.h ****       this->stackBegin = stack;
+ 679              		.loc 1 113 7
+ 680 0064 FB68     		ldr	r3, [r7, #12]
+ 681 0066 4FF4FA62 		mov	r2, #2000
+ 682 006a 5A61     		str	r2, [r3, #20]
+ 114:../dependencies/rodos/api/thread.h ****       this->stack      = reinterpret_cast<long*>(
+ 683              		.loc 1 114 7
+ 684 006c FB68     		ldr	r3, [r7, #12]
+ 685 006e BA68     		ldr	r2, [r7, #8]
+ 686 0070 DA61     		str	r2, [r3, #28]
+ 116:../dependencies/rodos/api/thread.h ****       this->priority   = priority;
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 17
+
+
+ 687              		.loc 1 116 38
+ 688 0072 FB68     		ldr	r3, [r7, #12]
+ 689 0074 DB69     		ldr	r3, [r3, #28]
+ 116:../dependencies/rodos/api/thread.h ****       this->priority   = priority;
+ 690              		.loc 1 116 50
+ 691 0076 1A46     		mov	r2, r3
+ 116:../dependencies/rodos/api/thread.h ****       this->priority   = priority;
+ 692              		.loc 1 116 53
+ 693 0078 FB68     		ldr	r3, [r7, #12]
+ 694 007a 5B69     		ldr	r3, [r3, #20]
+ 116:../dependencies/rodos/api/thread.h ****       this->priority   = priority;
+ 695              		.loc 1 116 50
+ 696 007c 1344     		add	r3, r3, r2
+ 697 007e 043B     		subs	r3, r3, #4
+ 116:../dependencies/rodos/api/thread.h ****       this->priority   = priority;
+ 698              		.loc 1 116 69
+ 699 0080 23F00703 		bic	r3, r3, #7
+ 115:../dependencies/rodos/api/thread.h ****         (reinterpret_cast<uintptr_t>(stackBegin) + (stackSize - 4)) & (~static_cast<uintptr_t>(7u))
+ 700              		.loc 1 115 7
+ 701 0084 1A46     		mov	r2, r3
+ 702 0086 FB68     		ldr	r3, [r7, #12]
+ 703 0088 9A61     		str	r2, [r3, #24]
+ 117:../dependencies/rodos/api/thread.h **** 
+ 704              		.loc 1 117 7
+ 705 008a FB68     		ldr	r3, [r7, #12]
+ 706 008c 3A68     		ldr	r2, [r7]
+ 707 008e 5A62     		str	r2, [r3, #36]
+ 119:../dependencies/rodos/api/thread.h ****   }
+ 708              		.loc 1 119 22
+ 709 0090 F868     		ldr	r0, [r7, #12]
+ 710 0092 FFF7FEFF 		bl	_ZN5RODOS6Thread15initializeStackEv
+ 711              	.LBE5:
+ 120:../dependencies/rodos/api/thread.h **** 
+ 712              		.loc 1 120 3
+ 713 0096 FB68     		ldr	r3, [r7, #12]
+ 714 0098 1846     		mov	r0, r3
+ 715 009a 1437     		adds	r7, r7, #20
+ 716              	.LCFI34:
+ 717              		.cfi_def_cfa_offset 12
+ 718 009c BD46     		mov	sp, r7
+ 719              	.LCFI35:
+ 720              		.cfi_def_cfa_register 13
+ 721              		@ sp needed
+ 722 009e 90BD     		pop	{r4, r7, pc}
+ 723              	.L22:
+ 724              		.align	2
+ 725              	.L21:
+ 726 00a0 00000000 		.word	_ZN5RODOS6Thread10threadListE
+ 727 00a4 08000000 		.word	_ZTVN5RODOS6ThreadE+8
+ 728              		.cfi_endproc
+ 729              	.LFE275:
+ 731              		.weak	_ZN5RODOS6ThreadC1ILj2000EEERAT__cPKcl
+ 732              		.thumb_set _ZN5RODOS6ThreadC1ILj2000EEERAT__cPKcl,_ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl
+ 733              		.weak	_ZTV10HelloWorld
+ 734              		.section	.rodata._ZTV10HelloWorld,"aG",%progbits,_ZTV10HelloWorld,comdat
+ 735              		.align	2
+ 738              	_ZTV10HelloWorld:
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 18
+
+
+ 739 0000 00000000 		.word	0
+ 740 0004 00000000 		.word	0
+ 741 0008 00000000 		.word	_ZN10HelloWorldD1Ev
+ 742 000c 00000000 		.word	_ZN10HelloWorldD0Ev
+ 743 0010 00000000 		.word	_ZN10HelloWorld3runEv
+ 744 0014 00000000 		.word	_ZN5RODOS6Thread4initEv
+ 745              		.section	.text._ZN10HelloWorldD2Ev,"axG",%progbits,_ZN10HelloWorldD5Ev,comdat
+ 746              		.align	1
+ 747              		.weak	_ZN10HelloWorldD2Ev
+ 748              		.syntax unified
+ 749              		.thumb
+ 750              		.thumb_func
+ 751              		.fpu softvfp
+ 753              	_ZN10HelloWorldD2Ev:
+ 754              	.LFB278:
+   6:hello_world.cpp **** {
+ 755              		.loc 2 6 7
+ 756              		.cfi_startproc
+ 757              		@ args = 0, pretend = 0, frame = 8
+ 758              		@ frame_needed = 1, uses_anonymous_args = 0
+ 759 0000 80B5     		push	{r7, lr}
+ 760              	.LCFI36:
+ 761              		.cfi_def_cfa_offset 8
+ 762              		.cfi_offset 7, -8
+ 763              		.cfi_offset 14, -4
+ 764 0002 82B0     		sub	sp, sp, #8
+ 765              	.LCFI37:
+ 766              		.cfi_def_cfa_offset 16
+ 767 0004 00AF     		add	r7, sp, #0
+ 768              	.LCFI38:
+ 769              		.cfi_def_cfa_register 7
+ 770 0006 7860     		str	r0, [r7, #4]
+ 771              	.LBB6:
+   6:hello_world.cpp **** {
+ 772              		.loc 2 6 7
+ 773 0008 054A     		ldr	r2, .L25
+ 774 000a 7B68     		ldr	r3, [r7, #4]
+ 775 000c 1A60     		str	r2, [r3]
+ 776 000e 7B68     		ldr	r3, [r7, #4]
+ 777 0010 1846     		mov	r0, r3
+ 778 0012 FFF7FEFF 		bl	_ZN5RODOS12StaticThreadILj2000EED2Ev
+ 779              	.LBE6:
+ 780 0016 7B68     		ldr	r3, [r7, #4]
+ 781 0018 1846     		mov	r0, r3
+ 782 001a 0837     		adds	r7, r7, #8
+ 783              	.LCFI39:
+ 784              		.cfi_def_cfa_offset 8
+ 785 001c BD46     		mov	sp, r7
+ 786              	.LCFI40:
+ 787              		.cfi_def_cfa_register 13
+ 788              		@ sp needed
+ 789 001e 80BD     		pop	{r7, pc}
+ 790              	.L26:
+ 791              		.align	2
+ 792              	.L25:
+ 793 0020 08000000 		.word	_ZTV10HelloWorld+8
+ 794              		.cfi_endproc
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 19
+
+
+ 795              	.LFE278:
+ 797              		.weak	_ZN10HelloWorldD1Ev
+ 798              		.thumb_set _ZN10HelloWorldD1Ev,_ZN10HelloWorldD2Ev
+ 799              		.section	.text._ZN10HelloWorldD0Ev,"axG",%progbits,_ZN10HelloWorldD5Ev,comdat
+ 800              		.align	1
+ 801              		.weak	_ZN10HelloWorldD0Ev
+ 802              		.syntax unified
+ 803              		.thumb
+ 804              		.thumb_func
+ 805              		.fpu softvfp
+ 807              	_ZN10HelloWorldD0Ev:
+ 808              	.LFB280:
+   6:hello_world.cpp **** {
+ 809              		.loc 2 6 7
+ 810              		.cfi_startproc
+ 811              		@ args = 0, pretend = 0, frame = 8
+ 812              		@ frame_needed = 1, uses_anonymous_args = 0
+ 813 0000 80B5     		push	{r7, lr}
+ 814              	.LCFI41:
+ 815              		.cfi_def_cfa_offset 8
+ 816              		.cfi_offset 7, -8
+ 817              		.cfi_offset 14, -4
+ 818 0002 82B0     		sub	sp, sp, #8
+ 819              	.LCFI42:
+ 820              		.cfi_def_cfa_offset 16
+ 821 0004 00AF     		add	r7, sp, #0
+ 822              	.LCFI43:
+ 823              		.cfi_def_cfa_register 7
+ 824 0006 7860     		str	r0, [r7, #4]
+   6:hello_world.cpp **** {
+ 825              		.loc 2 6 7
+ 826 0008 7868     		ldr	r0, [r7, #4]
+ 827 000a FFF7FEFF 		bl	_ZN10HelloWorldD1Ev
+ 828 000e 7868     		ldr	r0, [r7, #4]
+ 829 0010 FFF7FEFF 		bl	_ZdlPv
+ 830 0014 7B68     		ldr	r3, [r7, #4]
+ 831 0016 1846     		mov	r0, r3
+ 832 0018 0837     		adds	r7, r7, #8
+ 833              	.LCFI44:
+ 834              		.cfi_def_cfa_offset 8
+ 835 001a BD46     		mov	sp, r7
+ 836              	.LCFI45:
+ 837              		.cfi_def_cfa_register 13
+ 838              		@ sp needed
+ 839 001c 80BD     		pop	{r7, pc}
+ 840              		.cfi_endproc
+ 841              	.LFE280:
+ 843              		.weak	_ZTVN5RODOS12StaticThreadILj2000EEE
+ 844              		.section	.rodata._ZTVN5RODOS12StaticThreadILj2000EEE,"aG",%progbits,_ZTVN5RODOS12StaticThreadILj20
+ 845              		.align	2
+ 848              	_ZTVN5RODOS12StaticThreadILj2000EEE:
+ 849 0000 00000000 		.word	0
+ 850 0004 00000000 		.word	0
+ 851 0008 00000000 		.word	0
+ 852 000c 00000000 		.word	0
+ 853 0010 00000000 		.word	__cxa_pure_virtual
+ 854 0014 00000000 		.word	_ZN5RODOS6Thread4initEv
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 20
+
+
+ 855              		.section	.text._Z41__static_initialization_and_destruction_0ii,"ax",%progbits
+ 856              		.align	1
+ 857              		.syntax unified
+ 858              		.thumb
+ 859              		.thumb_func
+ 860              		.fpu softvfp
+ 862              	_Z41__static_initialization_and_destruction_0ii:
+ 863              	.LFB289:
+  12:hello_world.cpp **** } hello_world;...
+ 864              		.loc 2 12 14
+ 865              		.cfi_startproc
+ 866              		@ args = 0, pretend = 0, frame = 8
+ 867              		@ frame_needed = 1, uses_anonymous_args = 0
+ 868 0000 80B5     		push	{r7, lr}
+ 869              	.LCFI46:
+ 870              		.cfi_def_cfa_offset 8
+ 871              		.cfi_offset 7, -8
+ 872              		.cfi_offset 14, -4
+ 873 0002 82B0     		sub	sp, sp, #8
+ 874              	.LCFI47:
+ 875              		.cfi_def_cfa_offset 16
+ 876 0004 00AF     		add	r7, sp, #0
+ 877              	.LCFI48:
+ 878              		.cfi_def_cfa_register 7
+ 879 0006 7860     		str	r0, [r7, #4]
+ 880 0008 3960     		str	r1, [r7]
+ 881              		.loc 2 12 14
+ 882 000a 7B68     		ldr	r3, [r7, #4]
+ 883 000c 012B     		cmp	r3, #1
+ 884 000e 0CD1     		bne	.L31
+ 885              		.loc 2 12 14 is_stmt 0 discriminator 1
+ 886 0010 3B68     		ldr	r3, [r7]
+ 887 0012 4FF6FF72 		movw	r2, #65535
+ 888 0016 9342     		cmp	r3, r2
+ 889 0018 07D1     		bne	.L31
+ 890              		.loc 2 12 3 is_stmt 1 discriminator 3
+ 891 001a 0648     		ldr	r0, .L32
+ 892 001c FFF7FEFF 		bl	_ZN10HelloWorldC1Ev
+ 893 0020 054A     		ldr	r2, .L32+4
+ 894 0022 0649     		ldr	r1, .L32+8
+ 895 0024 0348     		ldr	r0, .L32
+ 896 0026 FFF7FEFF 		bl	__aeabi_atexit
+ 897              	.L31:
+ 898              		.loc 2 12 14
+ 899 002a 00BF     		nop
+ 900 002c 0837     		adds	r7, r7, #8
+ 901              	.LCFI49:
+ 902              		.cfi_def_cfa_offset 8
+ 903 002e BD46     		mov	sp, r7
+ 904              	.LCFI50:
+ 905              		.cfi_def_cfa_register 13
+ 906              		@ sp needed
+ 907 0030 80BD     		pop	{r7, pc}
+ 908              	.L33:
+ 909 0032 00BF     		.align	2
+ 910              	.L32:
+ 911 0034 00000000 		.word	hello_world
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 21
+
+
+ 912 0038 00000000 		.word	__dso_handle
+ 913 003c 00000000 		.word	_ZN10HelloWorldD1Ev
+ 914              		.cfi_endproc
+ 915              	.LFE289:
+ 917              		.section	.text._GLOBAL__sub_I_hello_world,"ax",%progbits
+ 918              		.align	1
+ 919              		.syntax unified
+ 920              		.thumb
+ 921              		.thumb_func
+ 922              		.fpu softvfp
+ 924              	_GLOBAL__sub_I_hello_world:
+ 925              	.LFB297:
+ 926              		.loc 2 12 14
+ 927              		.cfi_startproc
+ 928              		@ args = 0, pretend = 0, frame = 0
+ 929              		@ frame_needed = 1, uses_anonymous_args = 0
+ 930 0000 80B5     		push	{r7, lr}
+ 931              	.LCFI51:
+ 932              		.cfi_def_cfa_offset 8
+ 933              		.cfi_offset 7, -8
+ 934              		.cfi_offset 14, -4
+ 935 0002 00AF     		add	r7, sp, #0
+ 936              	.LCFI52:
+ 937              		.cfi_def_cfa_register 7
+ 938              		.loc 2 12 14
+ 939 0004 4FF6FF71 		movw	r1, #65535
+ 940 0008 0120     		movs	r0, #1
+ 941 000a FFF7FEFF 		bl	_Z41__static_initialization_and_destruction_0ii
+ 942 000e 80BD     		pop	{r7, pc}
+ 943              		.cfi_endproc
+ 944              	.LFE297:
+ 946              		.section	.init_array,"aw",%init_array
+ 947              		.align	2
+ 948 0000 00000000 		.word	_GLOBAL__sub_I_hello_world(target1)
+ 949              		.text
+ 950              	.Letext0:
+ 951              		.file 3 "../dependencies/rodos/api/rodos-version.h"
+ 952              		.file 4 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-none
+ 953              		.file 5 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-none
+ 954              		.file 6 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-none
+ 955              		.file 7 "../dependencies/rodos/api/rodos-debug.h"
+ 956              		.file 8 "../dependencies/rodos/api/hostinfos.h"
+ 957              		.file 9 "../dependencies/rodos/api/misc-rodos-funcs.h"
+ 958              		.file 10 "../dependencies/rodos/api/stream-bytesex.h"
+ 959              		.file 11 "../dependencies/rodos/api/timemodel.h"
+ 960              		.file 12 "../dependencies/rodos/api/reserved_application_ids.h"
+ 961              		.file 13 "../dependencies/rodos/api/topic.h"
+ 962              		.file 14 "../dependencies/rodos/api/subscriber.h"
+ 963              		.file 15 "../dependencies/rodos/api/timepoints.h"
+ 964              		.file 16 "../dependencies/rodos/api/reserved_topic_ids.h"
+ 965              		.file 17 "../dependencies/rodos/api/gateway/router.h"
+ 966              		.file 18 "../dependencies/rodos/api/hal/hal_uart.h"
+ 967              		.file 19 "../dependencies/rodos/api/gateway/linkinterfaceuart.h"
+ 968              		.file 20 "../dependencies/rodos/api/gateway/linkinterfacecan.h"
+ 969              		.file 21 "../dependencies/rodos/api/gateway/linkinterfaceshm.h"
+ 970              		.file 22 "../dependencies/rodos/api/listelement.h"
+ 971              		.file 23 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-non
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 22
+
+
+ 972              		.file 24 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-non
+ 973              		.file 25 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-non
+ 974              		.file 26 "../dependencies/rodos/api/rodos-errorcodes.h"
+ 975              		.file 27 "c:\\users\\omen\\desktop\\new\\floatsat\\codes\\obc\\dependencies\\add2path\\gcc-arm-non
+ 976              		.file 28 "../dependencies/rodos/api/hal/udp.h"
+ 977              		.file 29 "../dependencies/rodos/api/rodos.h"
+ 978              		.file 30 "../dependencies/rodos/api/hal/hal_gpio.h"
+ 979              		.file 31 "../dependencies/rodos/api/hal/hal_i2c.h"
+ 980              		.file 32 "<built-in>"
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 23
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 hello_world.cpp
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:16     .rodata._ZL13RODOS_VERSION:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:19     .rodata._ZL13RODOS_VERSION:00000000 _ZL13RODOS_VERSION
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:23     .rodata._ZL18RODOS_VERSION_TEXT:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:26     .rodata._ZL18RODOS_VERSION_TEXT:00000000 _ZL18RODOS_VERSION_TEXT
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:29     .rodata._ZN5RODOSL11END_OF_TIMEE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:32     .rodata._ZN5RODOSL11END_OF_TIMEE:00000000 _ZN5RODOSL11END_OF_TIMEE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:36     .rodata._ZN5RODOSL11NANOSECONDSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:39     .rodata._ZN5RODOSL11NANOSECONDSE:00000000 _ZN5RODOSL11NANOSECONDSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:43     .rodata._ZN5RODOSL12MICROSECONDSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:46     .rodata._ZN5RODOSL12MICROSECONDSE:00000000 _ZN5RODOSL12MICROSECONDSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:50     .rodata._ZN5RODOSL12MILLISECONDSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:53     .rodata._ZN5RODOSL12MILLISECONDSE:00000000 _ZN5RODOSL12MILLISECONDSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:57     .rodata._ZN5RODOSL7SECONDSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:60     .rodata._ZN5RODOSL7SECONDSE:00000000 _ZN5RODOSL7SECONDSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:64     .rodata._ZN5RODOSL7MINUTESE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:67     .rodata._ZN5RODOSL7MINUTESE:00000000 _ZN5RODOSL7MINUTESE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:71     .rodata._ZN5RODOSL5HOURSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:74     .rodata._ZN5RODOSL5HOURSE:00000000 _ZN5RODOSL5HOURSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:78     .rodata._ZN5RODOSL4DAYSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:81     .rodata._ZN5RODOSL4DAYSE:00000000 _ZN5RODOSL4DAYSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:85     .rodata._ZN5RODOSL5WEEKSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:88     .rodata._ZN5RODOSL5WEEKSE:00000000 _ZN5RODOSL5WEEKSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:92     .rodata._ZN5RODOSL11APID_ANONYME:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:95     .rodata._ZN5RODOSL11APID_ANONYME:00000000 _ZN5RODOSL11APID_ANONYME
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:98     .rodata._ZN5RODOSL15APID_MIDDLEWAREE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:101    .rodata._ZN5RODOSL15APID_MIDDLEWAREE:00000000 _ZN5RODOSL15APID_MIDDLEWAREE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:104    .rodata._ZN5RODOSL20APID_GATEWAY_GENERICE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:107    .rodata._ZN5RODOSL20APID_GATEWAY_GENERICE:00000000 _ZN5RODOSL20APID_GATEWAY_GENERICE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:110    .rodata._ZN5RODOSL16APID_GATEWAY_UDPE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:113    .rodata._ZN5RODOSL16APID_GATEWAY_UDPE:00000000 _ZN5RODOSL16APID_GATEWAY_UDPE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:116    .rodata._ZN5RODOSL17APID_GATEWAY_UARTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:119    .rodata._ZN5RODOSL17APID_GATEWAY_UARTE:00000000 _ZN5RODOSL17APID_GATEWAY_UARTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:122    .rodata._ZN5RODOSL15FIRST_USER_APIDE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:125    .rodata._ZN5RODOSL15FIRST_USER_APIDE:00000000 _ZN5RODOSL15FIRST_USER_APIDE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:128    .text._ZN5RODOS6Thread4initEv:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:136    .text._ZN5RODOS6Thread4initEv:00000000 _ZN5RODOS6Thread4initEv
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:173    .rodata._ZN5RODOSL21RODOS_LOCAL_BROADCASTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:176    .rodata._ZN5RODOSL21RODOS_LOCAL_BROADCASTE:00000000 _ZN5RODOSL21RODOS_LOCAL_BROADCASTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:179    .rodata._ZN5RODOSL25TOPIC_ID_FOR_TOPIC_REPORTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:182    .rodata._ZN5RODOSL25TOPIC_ID_FOR_TOPIC_REPORTE:00000000 _ZN5RODOSL25TOPIC_ID_FOR_TOPIC_REPORTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:185    .rodata._ZN5RODOSL27TOPIC_ID_SUBSCRIBERS_REPORTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:188    .rodata._ZN5RODOSL27TOPIC_ID_SUBSCRIBERS_REPORTE:00000000 _ZN5RODOSL27TOPIC_ID_SUBSCRIBERS_REPORTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:191    .rodata._ZN5RODOSL20TOPIC_ID_DEF_GATEWAYE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:194    .rodata._ZN5RODOSL20TOPIC_ID_DEF_GATEWAYE:00000000 _ZN5RODOSL20TOPIC_ID_DEF_GATEWAYE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:197    .rodata._ZN5RODOSL23TOPIC_ID_NETWORK_REPORTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:200    .rodata._ZN5RODOSL23TOPIC_ID_NETWORK_REPORTE:00000000 _ZN5RODOSL23TOPIC_ID_NETWORK_REPORTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:203    .rodata._ZN5RODOSL26TOPIC_ID_TAKS_DISTRIBUTIONE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:206    .rodata._ZN5RODOSL26TOPIC_ID_TAKS_DISTRIBUTIONE:00000000 _ZN5RODOSL26TOPIC_ID_TAKS_DISTRIBUTIONE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:209    .rodata._ZN5RODOSL23TOPIC_ID_MONITORING_MSGE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:212    .rodata._ZN5RODOSL23TOPIC_ID_MONITORING_MSGE:00000000 _ZN5RODOSL23TOPIC_ID_MONITORING_MSGE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:215    .rodata._ZN5RODOSL22TOPIC_ID_DEBUG_CMD_MSGE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:218    .rodata._ZN5RODOSL22TOPIC_ID_DEBUG_CMD_MSGE:00000000 _ZN5RODOSL22TOPIC_ID_DEBUG_CMD_MSGE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:221    .rodata._ZN5RODOSL17TOPICID_UART_CONFE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:224    .rodata._ZN5RODOSL17TOPICID_UART_CONFE:00000000 _ZN5RODOSL17TOPICID_UART_CONFE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:227    .rodata._ZN5RODOSL15TOPICID_UART_INE:00000000 $d
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 24
+
+
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:230    .rodata._ZN5RODOSL15TOPICID_UART_INE:00000000 _ZN5RODOSL15TOPICID_UART_INE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:233    .rodata._ZN5RODOSL16TOPICID_UART_OUTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:236    .rodata._ZN5RODOSL16TOPICID_UART_OUTE:00000000 _ZN5RODOSL16TOPICID_UART_OUTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:239    .rodata._ZN5RODOSL17TOPIC_ID_PWM_CONFE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:242    .rodata._ZN5RODOSL17TOPIC_ID_PWM_CONFE:00000000 _ZN5RODOSL17TOPIC_ID_PWM_CONFE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:245    .rodata._ZN5RODOSL18TOPIC_ID_PWM_WIDTHE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:248    .rodata._ZN5RODOSL18TOPIC_ID_PWM_WIDTHE:00000000 _ZN5RODOSL18TOPIC_ID_PWM_WIDTHE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:251    .rodata._ZN5RODOSL20TOPIC_ID_ANALOG_CONFE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:254    .rodata._ZN5RODOSL20TOPIC_ID_ANALOG_CONFE:00000000 _ZN5RODOSL20TOPIC_ID_ANALOG_CONFE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:257    .rodata._ZN5RODOSL21TOPIC_ID_ANALOG_CHANSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:260    .rodata._ZN5RODOSL21TOPIC_ID_ANALOG_CHANSE:00000000 _ZN5RODOSL21TOPIC_ID_ANALOG_CHANSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:263    .rodata._ZN5RODOSL19FIRST_USER_TOPIC_IDE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:266    .rodata._ZN5RODOSL19FIRST_USER_TOPIC_IDE:00000000 _ZN5RODOSL19FIRST_USER_TOPIC_IDE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:271    .rodata._ZN5RODOSL33MAX_NUMBER_OF_GATEWAYS_PER_ROUTERE:00000000 _ZN5RODOSL33MAX_NUMBER_OF_GATEWAYS_PER_ROUTERE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:274    .text._ZN5RODOS12StaticThreadILj2000EED2Ev:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:281    .text._ZN5RODOS12StaticThreadILj2000EED2Ev:00000000 _ZN5RODOS12StaticThreadILj2000EED2Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:321    .text._ZN5RODOS12StaticThreadILj2000EED2Ev:00000020 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:848    .rodata._ZTVN5RODOS12StaticThreadILj2000EEE:00000000 _ZTVN5RODOS12StaticThreadILj2000EEE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:281    .text._ZN5RODOS12StaticThreadILj2000EED2Ev:00000000 _ZN5RODOS12StaticThreadILj2000EED1Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:328    .text._ZN5RODOS12StaticThreadILj2000EED0Ev:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:335    .text._ZN5RODOS12StaticThreadILj2000EED0Ev:00000000 _ZN5RODOS12StaticThreadILj2000EED0Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:372    .rodata._ZN5RODOSL13UART_BUF_SIZEE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:375    .rodata._ZN5RODOSL13UART_BUF_SIZEE:00000000 _ZN5RODOSL13UART_BUF_SIZEE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:378    .rodata._ZN5RODOSL23MAX_UART_MESSAGE_LENGTHE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:381    .rodata._ZN5RODOSL23MAX_UART_MESSAGE_LENGTHE:00000000 _ZN5RODOSL23MAX_UART_MESSAGE_LENGTHE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:384    .rodata._ZN5RODOSL15OUTPUT_BUF_SIZEE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:387    .rodata._ZN5RODOSL15OUTPUT_BUF_SIZEE:00000000 _ZN5RODOSL15OUTPUT_BUF_SIZEE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:390    .rodata._ZL16IP_BROADCAST_ADR:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:393    .rodata._ZL16IP_BROADCAST_ADR:00000000 _ZL16IP_BROADCAST_ADR
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:398    .rodata._ZN5RODOSL18CAN_LINK_NODE_BITSE:00000000 _ZN5RODOSL18CAN_LINK_NODE_BITSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:403    .rodata._ZN5RODOSL19CAN_LINK_TOPIC_BITSE:00000000 _ZN5RODOSL19CAN_LINK_TOPIC_BITSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:406    .rodata._ZN5RODOSL11CAN_LINK_IDE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:409    .rodata._ZN5RODOSL11CAN_LINK_IDE:00000000 _ZN5RODOSL11CAN_LINK_IDE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:412    .rodata._ZN5RODOSL19CAN_MSG_BUFFER_SIZEE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:415    .rodata._ZN5RODOSL19CAN_MSG_BUFFER_SIZEE:00000000 _ZN5RODOSL19CAN_MSG_BUFFER_SIZEE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:418    .rodata._ZN5RODOSL14CAN_TX_TIMEOUTE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:421    .rodata._ZN5RODOSL14CAN_TX_TIMEOUTE:00000000 _ZN5RODOSL14CAN_TX_TIMEOUTE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:425    .rodata._ZN5RODOSL8FIFOSIZEE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:428    .rodata._ZN5RODOSL8FIFOSIZEE:00000000 _ZN5RODOSL8FIFOSIZEE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:431    .rodata._ZN5RODOSL10MAXMEMBERSE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:434    .rodata._ZN5RODOSL10MAXMEMBERSE:00000000 _ZN5RODOSL10MAXMEMBERSE
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:437    .rodata:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:441    .text._ZN10HelloWorld3runEv:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:448    .text._ZN10HelloWorld3runEv:00000000 _ZN10HelloWorld3runEv
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:483    .text._ZN10HelloWorld3runEv:00000018 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:492    .text._ZN10HelloWorldC2Ev:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:499    .text._ZN10HelloWorldC2Ev:00000000 _ZN10HelloWorldC2Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:563    .text._ZN5RODOS12StaticThreadILj2000EEC2EPKcl:00000000 _ZN5RODOS12StaticThreadILj2000EEC2EPKcl
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:541    .text._ZN10HelloWorldC2Ev:00000024 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:738    .rodata._ZTV10HelloWorld:00000000 _ZTV10HelloWorld
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:499    .text._ZN10HelloWorldC2Ev:00000000 _ZN10HelloWorldC1Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:553    .bss.hello_world:00000000 hello_world
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:550    .bss.hello_world:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:556    .text._ZN5RODOS12StaticThreadILj2000EEC2EPKcl:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:625    .text._ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl:00000000 _ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:611    .text._ZN5RODOS12StaticThreadILj2000EEC2EPKcl:0000002c $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:563    .text._ZN5RODOS12StaticThreadILj2000EEC2EPKcl:00000000 _ZN5RODOS12StaticThreadILj2000EEC1EPKcl
+ARM GAS  C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s 			page 25
+
+
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:618    .text._ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:726    .text._ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl:000000a0 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:625    .text._ZN5RODOS6ThreadC2ILj2000EEERAT__cPKcl:00000000 _ZN5RODOS6ThreadC1ILj2000EEERAT__cPKcl
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:735    .rodata._ZTV10HelloWorld:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:753    .text._ZN10HelloWorldD2Ev:00000000 _ZN10HelloWorldD1Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:807    .text._ZN10HelloWorldD0Ev:00000000 _ZN10HelloWorldD0Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:746    .text._ZN10HelloWorldD2Ev:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:753    .text._ZN10HelloWorldD2Ev:00000000 _ZN10HelloWorldD2Ev
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:793    .text._ZN10HelloWorldD2Ev:00000020 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:800    .text._ZN10HelloWorldD0Ev:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:845    .rodata._ZTVN5RODOS12StaticThreadILj2000EEE:00000000 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:856    .text._Z41__static_initialization_and_destruction_0ii:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:862    .text._Z41__static_initialization_and_destruction_0ii:00000000 _Z41__static_initialization_and_destruction_0ii
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:911    .text._Z41__static_initialization_and_destruction_0ii:00000034 $d
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:918    .text._GLOBAL__sub_I_hello_world:00000000 $t
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:924    .text._GLOBAL__sub_I_hello_world:00000000 _GLOBAL__sub_I_hello_world
+C:\Users\OMEN\AppData\Local\Temp\ccGzPStJ.s:947    .init_array:00000000 $d
+                           .group:00000000 _ZN5RODOS12StaticThreadILj2000EED5Ev
+                           .group:00000000 _ZN10HelloWorldC5Ev
+                           .group:00000000 _ZN5RODOS12StaticThreadILj2000EEC5EPKcl
+                           .group:00000000 _ZN5RODOS6ThreadC5ILj2000EEERAT__cPKcl
+                           .group:00000000 _ZN10HelloWorldD5Ev
+
+UNDEFINED SYMBOLS
+_ZN5RODOS6ThreadD2Ev
+_ZdlPv
+_ZN5RODOS6PRINTFEPKcz
+_ZN5RODOS11ListElementC2ERPS0_PKcPv
+_ZN5RODOS6Thread15initializeStackEv
+_ZN5RODOS6Thread10threadListE
+_ZTVN5RODOS6ThreadE
+__cxa_pure_virtual
+__aeabi_atexit
+__dso_handle
